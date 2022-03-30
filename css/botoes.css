@@ -1,0 +1,168 @@
+.btn_green {
+  border-radius: 2px;
+  background-color: #5cb85c;
+  cursor: pointer;
+  width: 100px;
+  padding: 3px;
+  color: white;
+  margin-top: 6px;
+}
+
+.btn_green:hover {
+  background-color: #376e37;
+}
+
+.btn_yellow {
+  border-radius: 2px;
+  background-color: #f9dd16;
+  cursor: pointer;
+  width: 100px;
+  padding: 3px;
+  color: white;
+  margin-top: 6px;
+}
+
+.btn_yellow:hover {
+  background-color: #ffffcc;
+}
+
+.btn_black {
+  border-radius: 2px;
+  background-color: #2d3740;
+  cursor: pointer;
+  width: 100px;
+  padding: 3px;
+  color: white;
+  margin-top: 6px;
+}
+
+.btn_black:hover {
+  background-color: #262626;
+}
+
+.btn_white {
+  border-radius: 2px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  width: 100px;
+  padding: 3px;
+  color: #494949;
+  margin-top: 6px;
+}
+
+.btn_white:hover {
+  background-color: #fff;
+}
+
+.btn_blue {
+  border-radius: 2px;
+  background-color: #337ab7;
+  cursor: pointer;
+  width: 100px;
+  padding: 3px;
+  color: white;
+  margin-top: 6px;
+}
+
+.btn_blue:hover {
+  background-color: #235580;
+}
+
+.btn_red {
+  border-radius: 2px;
+  background-color: #d9534f;
+  cursor: pointer;
+  width: 100px;
+  padding: 3px;
+  color: white;
+  margin-top: 6px;
+}
+
+.btn_red:hover {
+  background-color: #973a37;
+}
+
+.btn_especial {
+  border-radius: 2px;
+  background-color: #005aa2;
+  cursor: pointer;
+  width: 100px;
+  padding: 3px;
+  color: white;
+  margin-top: 6px;
+}
+
+.btn_especial:hover {
+  background-color: rgb(1, 85, 155);
+}
+
+.btn_gray {
+  border-radius: 2px;
+  background-color: #6e6e6e;
+  cursor: pointer;
+  width: 100px;
+  padding: 3px;
+  color: white;
+  margin-top: 6px;
+}
+
+.btn_gray:hover {
+  background-color: #585858;
+}
+
+.e404 {
+  background: #ffcccc url('icones/404.png') 15px 50% no-repeat;
+  border-radius: 6px;
+  border: 1px solid #890100;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  width: 50%;
+  margin: 0 auto 60px;
+  color: #000;
+  padding: 10px 10px 10px 60px;
+}
+
+
+
+/* BOTAO FECHAR ANIMATED*/ 
+.menu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  padding: 0;
+}
+.line {
+  fill: none;
+  stroke: black;
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+}
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
