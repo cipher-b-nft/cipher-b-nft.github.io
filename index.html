@@ -983,7 +983,8 @@ a1 = np.asarray(img)
 a2 = a1.reshape(1,-1) 
 a3 = a2.reshape(-1,3)
 
-arr3 = [] sr = 44100
+arr3 = [] 
+sr = 44100
 for ln in a3: 
 	arr3.append(decode([ln]))
 	arr3 = np.array(arr3) out = np.array(arr3).reshape(-1,2)
