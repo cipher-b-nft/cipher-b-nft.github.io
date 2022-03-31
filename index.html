@@ -818,8 +818,8 @@ function fnAtualizaNetworkBG() {
 	var options = {
 		particleColor: '#fff',
 		//background: '#f4f6f9',
-		//background: '#123456',
-		background: 'img/bg3.jpg',
+		background: '#123456',
+		//background: 'img/bg3.jpg',
 		interactive: false,
 		speed: 'medium',
 		density: 'high'
@@ -906,7 +906,7 @@ function fnAtualizaNetworkBG() {
 		</header>
 					
 			<div id="div_canvas_bg">
-				<h1 class='h1_welcome'>Welcome to the Cipher-B site. Where NFTs are not just images</h1>	
+				<h1 class='h1_welcome'>Welcome to the Cipher-B site. Secret messages behind simple images.</h1>	
 			</div>
 			
 			<br/><br/>
@@ -918,9 +918,9 @@ function fnAtualizaNetworkBG() {
 					
 						<div class="container" style='font-size: 16px; font-weight: bold; margin-top: 60px'>
 
-							The NFT-Cipher was generated using intelligent systems and advanced mathematical concepts. 
+							The images was generated using intelligent systems and advanced mathematical concepts. 
 							<br/><br/>
-							Behind each NFT there is a secret message.
+							Behind each image there is a secret message.
 							<br/><br/>
 
 						</div><!-- container -->
@@ -943,14 +943,17 @@ function fnAtualizaNetworkBG() {
 			<br/>
 			<b>Step 2:</b>
 			<br/>
-			Upload the NFT to Google Colab and rename it to "nft.png"
-			<br/>
+			Download the image file beloe, in "Download" section.
 			<b>Step 3:</b>
+			<br/>
+			Upload the image to Google Colab and rename it to "nft.png"
+			<br/>
+			<b>Step 4:</b>
 			<br/>
 			Copy and paste the code below. It will generate an MP3 file called "out.mp3", right click to download and listen.
 			<br/>
 			
-<pre style='line-height: 22px'>
+<pre style='padding: 8px; line-height: 22px'>
 !pip install pydub
 
 import numpy as np 
@@ -975,15 +978,22 @@ with warnings.catch_warnings():
 		a = n    
 
 return a
-img = PIL.Image.open('nft.png') a1 = np.asarray(img) a2 = a1.reshape(1,-1) a3 = a2.reshape(-1,3)
+img = PIL.Image.open('nft.png') 
+a1 = np.asarray(img) 
+a2 = a1.reshape(1,-1) 
+a3 = a2.reshape(-1,3)
+
 arr3 = [] sr = 44100
-for ln in a3: arr3.append(decode([ln]))
-arr3 = np.array(arr3) out = np.array(arr3).reshape(-1,2)
+for ln in a3: 
+	arr3.append(decode([ln]))
+	arr3 = np.array(arr3) out = np.array(arr3).reshape(-1,2)
+	
 channels = 2 if (out.ndim == 2 and out.shape[1] == 2) else 1 
 y = np.int16(out) 
 song = pydub.AudioSegment(y.tobytes(), frame_rate=sr, sample_width=2, channels=channels) 
 song.export('out.mp3', format="mp3", bitrate="320k") 
 print('Finished!')
+
 </pre>
 				
 					</div>
@@ -996,7 +1006,7 @@ print('Finished!')
 					<div class='div_cronos_content'>
 					<div style='width: 600px; margin: 0 auto'>
 						
-						<table style='width: 600px; border: solid 1px #666'>
+						<table style='max-width: 600px; width: 90%; border: solid 1px #666'>
 							<tr style='text-align: center; background-color: #aaa'>
 								<td>Name</td>
 								<td>Type</td>
